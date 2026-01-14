@@ -25,14 +25,28 @@ body {
   padding: 24px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .title {
   text-align: center;
   font-size: 1.25rem;
-  margin-bottom: 8px;
+  margin: 0;
+}
+
+.card-footer {
+  text-align: center;
+  font-size: 0.55rem;
+  color: #64748b;
+  margin-top: -15px;
+  margin-left: 53px;
+}
+
+.card-footer strong {
+  margin-left: 5px;
+  color: #94a3b8;
+  font-weight: 600;
 }
 
 .input {
@@ -108,5 +122,12 @@ body {
   .title {
     font-size: 1.1rem;
   }
-}
 
+  .card-footer {
+    text-align: center;
+    font-size: 0.35rem;
+    color: #64748b;
+    margin-top: -15px;
+    margin-left: 74px;
+  }
+}

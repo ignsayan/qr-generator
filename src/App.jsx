@@ -48,7 +48,8 @@ export default function App() {
 
             const link = document.createElement("a");
             link.href = canvas.toDataURL("image/png");
-            link.download = "qr-code-600.png";
+            const microtime = Math.floor(Date.now() * 1000) + Math.floor(Math.random() * 1000);
+            link.download = `${microtime}.png`;
             link.click();
         };
 
@@ -59,7 +60,9 @@ export default function App() {
         <div className="app">
             <div className="card">
                 <h1 className="title">QR Code Generator</h1>
-
+                <small className="card-footer">
+                    d e v e l o p e d &nbsp; b y <strong> S A Y A N</strong>
+                </small>
                 <input
                     type="text"
                     className="input"
